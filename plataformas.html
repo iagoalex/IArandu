@@ -1,5 +1,3 @@
-<!-- o-que-e-uma-ia.html -->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -7,195 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MIA | Plataformas</title>
+    <title>MIA</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-        <script src="script.js" defer></script>
-
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Cabeçalho: -->
+    <!-- =====================================================================================================================================
+    Cabeçalho      Cabeçalho      Cabeçalho      Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     
+    ====================================================================================================================================== -->
 
     <header>
 
         <div class="logo">
+
             <a href="index.html">
-                <h2>MIA</h2>
-                <span>Manual IArandu</span>
+
+                <img src="imagens/logo.png" alt="Logo do Manual IArandu.">
+
+                <div class="logo-text">
+
+                    <h2>MIA</h2>
+                    
+                    <span>Manual IArandu</span>
+
+                </div>
+
             </a>
+
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
         
         <nav id="menu">
+
             <a href="index.html">Início</a>
             <a href="o-que-e-uma-ia.html">O que é uma IA?</a>
             <a href="boas-praticas.html">Boas Práticas</a>
             <a href="plataformas.html">Plataformas</a>
             <a href="indicacoes_bibliograficas.html">Indicações Bibliográficas</a>
+            
         </nav>
 
     </header>
 
+    <!-- =====================================================================================================================================
+    Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página          
+    ====================================================================================================================================== -->
+
+
     <main>
+
+        <!-- Descrição inicial -->
 
         <section class="hero">
 
             <div class="hero-content">
 
-                <span class="tag">
-                    INTELIGÊNCIA ARTIFICIAL
-                </span>
-
-                <h1>
-                    Catalogo de plataformas de
-                    <strong>Inteligência Artificial?</strong>
-                </h1>
-
-                <p>
-                    Entenda os conceitos fundamentais da Inteligência Artificial,
-                    como ela funciona e de que maneira pode ser utilizada de forma
-                    consciente, crítica e responsável.
-                </p>
+                <span class="tag">INTELIGÊNCIA ARTIFICIAL</span>
+                <h1>Encontre a IA certa<strong>para cada tarefa.</strong></h1>
+                <p>Pesquise o que você deseja fazer e descubra quais ferramentas de Inteligência Artificial podem
+                    ajudar.</p>
 
             </div>
 
         </section>
 
-        <section class="categorias">
+        <!-- Categorias -->
+
+        <section class="categorias" id="categorias">
 
             <div class="titulo-secao">
-                <span>CONCEITO</span>
 
-                <h2>Entendendo a Inteligência Artificial</h2>
+                <span>CATEGORIAS</span>
+                <h2>O que você deseja fazer?</h2>
+
             </div>
 
-            <div class="card" style="margin-top: 35px;">
+            <div class="categorias-grid">
 
-                <h3>O que é Inteligência Artificial?</h3>
+                <button class="categoria" data-categoria="Texto">
 
-                <p>
-                    Inteligência Artificial (IA) é um conjunto de técnicas e
-                    tecnologias utilizadas para desenvolver sistemas capazes de
-                    realizar tarefas que normalmente exigiriam algum tipo de
-                    capacidade humana, como reconhecer padrões, compreender
-                    linguagem, analisar informações, produzir conteúdos e auxiliar
-                    na tomada de decisões.
-                </p>
+                    <span class="emoji">📝</span>
+                    <strong>Texto</strong>
+                    <small>Escrita e conteúdo</small>
 
-                <p>
-                    Atualmente, ferramentas de IA podem gerar textos, imagens,
-                    vídeos, áudios, códigos de programação, apresentações e outros
-                    tipos de conteúdo a partir de instruções fornecidas pelos
-                    usuários.
-                </p>
+                </button>
+
+                <button class="categoria" data-categoria="Imagem">
+
+                    <span class="emoji">🎨</span>
+                    <strong>Imagem</strong>
+                    <small>Criação visual</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="Vídeo">
+
+                    <span class="emoji">🎬</span>
+                    <strong>Vídeo</strong>
+                    <small>Criação e edição</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="Áudio">
+
+                    <span class="emoji">🎵</span>
+                    <strong>Áudio</strong>
+                    <small>Voz e música</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="Educação">
+
+                    <span class="emoji">📚</span>
+                    <strong>Educação</strong>
+                    <small>Ensino e aprendizagem</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="Programação">
+
+                    <span class="emoji">💻</span>
+                    <strong>Programação</strong>
+                    <small>Código e desenvolvimento</small>
+
+                </button>
 
             </div>
 
         </section>
 
-        <section class="resultados">
+
+        <!-- Seleção de acordo com a categorização  -->
+
+        <section class="resultados" id="ferramentas">
 
             <div class="cabecalho-resultados">
 
                 <div>
-                    <span>CONCEITOS FUNDAMENTAIS</span>
 
-                    <h2>Como a IA funciona?</h2>
+                    <span>RESULTADOS</span>
+                    <h2 id="tituloResultados">Ferramentas de IA</h2>
+
                 </div>
 
-            </div>
-
-            <div id="listaResultados">
-
-                <article class="card">
-
-                    <div class="card-topo">
-                        <div class="icone">🧠</div>
-                        <span class="tipo">Aprendizado</span>
-                    </div>
-
-                    <h3>Aprendizado de máquina</h3>
-
-                    <p>
-                        Sistemas podem identificar padrões em grandes conjuntos
-                        de dados e utilizar essas informações para realizar
-                        classificações, previsões ou gerar respostas.
-                    </p>
-
-                </article>
-
-                <article class="card">
-
-                    <div class="card-topo">
-                        <div class="icone">💬</div>
-                        <span class="tipo">Linguagem</span>
-                    </div>
-
-                    <h3>IA generativa</h3>
-
-                    <p>
-                        Tecnologias generativas conseguem produzir novos conteúdos,
-                        como textos, imagens, músicas, vídeos e códigos, a partir
-                        de comandos ou instruções fornecidas pelo usuário.
-                    </p>
-
-                </article>
-
-                <article class="card">
-
-                    <div class="card-topo">
-                        <div class="icone">🔎</div>
-                        <span class="tipo">Análise</span>
-                    </div>
-
-                    <h3>Reconhecimento de padrões</h3>
-
-                    <p>
-                        A IA pode analisar grandes quantidades de informações e
-                        identificar relações ou padrões que podem auxiliar pessoas
-                        em diferentes atividades.
-                    </p>
-
-                </article>
+                <span id="quantidade"></span>
 
             </div>
 
-        </section>
+            <div id="listaResultados"></div>
 
-        <section class="categorias">
+            <div id="semResultados">
 
-            <div class="titulo-secao">
-                <span>ATENÇÃO</span>
-
-                <h2>A IA não é infalível</h2>
-            </div>
-
-            <div class="card" style="margin-top: 35px;">
-
-                <p>
-                    As respostas produzidas por sistemas de Inteligência Artificial
-                    podem conter erros, informações incompletas ou interpretações
-                    inadequadas. Por isso, o usuário deve analisar criticamente
-                    os resultados e verificar informações importantes antes de
-                    utilizá-las.
-                </p>
-
-                <p>
-                    O uso responsável da IA envolve compreender suas possibilidades,
-                    reconhecer suas limitações e manter a participação humana no
-                    processo de análise e decisão.
-                </p>
+                <div class="icone-vazio">⌕</div>
+                <h3>Nenhuma ferramenta encontrada</h3>
+                <p>Tente pesquisar utilizando outras palavras-chave.</p>
 
             </div>
 
@@ -203,17 +174,15 @@
 
     </main>
 
+    <!-- =====================================================================================================================================
+    Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé
+    ====================================================================================================================================== -->
+
     <footer>
 
-        <h2>ARANDU</h2>
-
-        <p>
-            Conhecimento para a era da Inteligência Artificial.
-        </p>
-
-        <small>
-            © 2026 Arandu
-        </small>
+        <h2>Manual IArandu</h2>
+        <p>Conhecimento para a era da Inteligência Artificial.</p>
+        <small>© 2026 Manual IArandu</small>
 
     </footer>
 
