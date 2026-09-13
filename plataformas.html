@@ -12,7 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <script src="js/menu.js" defer></script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menuToggle = document.getElementById("menuToggle");
+            const menu = document.getElementById("menu");
+        
+            // Verifica se os elementos existem na página
+            if (menuToggle && menu) {
+    
+                menuToggle.addEventListener("click", function () {
+        
+                    menu.classList.toggle("active");
+        
+                });
+        
+            }
+        
+        });
+    </script>
     <script src="script.js" defer></script>
 </head>
 
