@@ -6,167 +6,316 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MIA</title>
+    <title>MIA | Início</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
+    <script src="js/menu.js" defer></script>
 
 </head>
 
 <body>
 
-    <!-- Cabeçalho: -->
+    <!-- =====================================================================================================================================
+    Cabeçalho      Cabeçalho      Cabeçalho      Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     Cabeçalho     
+    ====================================================================================================================================== -->
 
     <header>
 
         <div class="logo">
+
             <a href="index.html">
-                <h2>MIA</h2>
-                <span>Manual IArandu</span>
+
+                <img src="imagens/logo.png" alt="Logo do Manual IArandu.">
+
+                <div class="logo-text">
+
+                    <h2>MIA</h2>
+
+                    <span>Manual IArandu</span>
+
+                </div>
+
             </a>
+
         </div>
 
         <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
         
         <nav id="menu">
+
             <a href="index.html">Início</a>
             <a href="o-que-e-uma-ia.html">O que é uma IA?</a>
             <a href="boas-praticas.html">Boas Práticas</a>
             <a href="plataformas.html">Plataformas</a>
             <a href="indicacoes_bibliograficas.html">Indicações Bibliográficas</a>
+
         </nav>
 
     </header>
 
-    <!-- =====================================================
-                         Corpo da página
-    ====================================================== -->
+    <!-- =====================================================================================================================================
+    Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página          
+    ====================================================================================================================================== -->
 
     <main>
 
-        <!-- Descrição inicial -->
+        <!------------------------------------------------------------ Primera seção ------------------------------------------------------------>
 
         <section class="hero">
 
             <div class="hero-content">
 
-                <span class="tag">INTELIGÊNCIA ARTIFICIAL</span>
-                <h1>Encontre a IA certa<strong>para cada tarefa.</strong></h1>
-                <p>Pesquise o que você deseja fazer e descubra quais ferramentas de Inteligência Artificial podem
-                    ajudar.</p>
+                <span class="tag">MIA - Manual IArandu</span>
 
-                <!-- Busca -->
+                <h1>
+                    O que é o
+                    <strong>Manual IArandu?</strong>
+                </h1>
 
-                <div class="search-box">
-
-                    <span class="search-icon">⌕</span>
-                    <input type="text" id="campoBusca" placeholder="Ex.: criar imagens, resumir textos, fazer vídeos..."
-                        autocomplete="off">
-                    <button id="botaoBuscar">Pesquisar</button>
-
-                </div>
+                <p>Entenda o que é o MIA e como você poderá utilizá-lo como 
+                    material de apoio para o uso da IA na sua pesquisa acadêmica.
+                </p>
 
             </div>
 
         </section>
 
-        <!-- Categorias -->
+        <!------------------------------------------------------------ Segunda seção ------------------------------------------------------------>
 
-        <section class="categorias" id="categorias">
+        <section class="categorias">
 
-            <div class="titulo-secao">
-
-                <span>CATEGORIAS</span>
-                <h2>O que você deseja fazer?</h2>
-
-            </div>
-
-            <div class="categorias-grid">
-
-                <button class="categoria" data-categoria="Texto">
-
-                    <span class="emoji">📝</span>
-                    <strong>Texto</strong>
-                    <small>Escrita e conteúdo</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Imagem">
-
-                    <span class="emoji">🎨</span>
-                    <strong>Imagem</strong>
-                    <small>Criação visual</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Vídeo">
-
-                    <span class="emoji">🎬</span>
-                    <strong>Vídeo</strong>
-                    <small>Criação e edição</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Áudio">
-
-                    <span class="emoji">🎵</span>
-                    <strong>Áudio</strong>
-                    <small>Voz e música</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Educação">
-
-                    <span class="emoji">📚</span>
-                    <strong>Educação</strong>
-                    <small>Ensino e aprendizagem</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Programação">
-
-                    <span class="emoji">💻</span>
-                    <strong>Programação</strong>
-                    <small>Código e desenvolvimento</small>
-
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- Seleção de acordo com a categorização  -->
-
-        <section class="resultados" id="ferramentas">
+            <!-- Título da segunda seção -->
 
             <div class="cabecalho-resultados">
 
                 <div>
 
-                    <span>RESULTADOS</span>
-                    <h2 id="tituloResultados">Ferramentas de IA</h2>
+                    <span>Definição</span>
+
+                    <h2>O que é o Manual IArandu?</h2>
 
                 </div>
 
-                <span id="quantidade"></span>
+            </div>
+
+            <!-- Texto da segunda seção -->
+
+            <div class="card" style="margin-top: 35px;">
+
+                <p>
+                    O Manual IArandu (MIA) é uma plataforma WEB voltada a ajudar os alunos de graduação e pós-graduação a utilizarem as ferramentas de 
+                    Inteligência Artificial como forma de potencializar os seus trabalhos acadêmicos, respeitando os limites éticos do uso da ferramenta 
+                    como forma de pesquisa e de potencializar a produção científica.
+
+                    <br><br>
+
+                    A plataforma foi desenvolvida como atividade de conclusão da disciplina "Inteligência Artificial na Educação: Usos Possíveis e 
+                    Necessários Limites Éticos", do Programa de Pós-graduação em Educação (PPGEDU) da Universidade Federal do Rio Grande do Sul (UFRGS), 
+                    na linha de pesquisa: Estudos Culturais em Educação.
+
+                    <br><br>
+                    
+                    A disciplina teve como docente responsável a professora Dra. Cristianne Maria Farmer Rocha (PPGEDU/UFRGS) e teve como objetivo instigar 
+                    os conhecimentos e habilidades relacionados às ferramentas de IA Generativa, orientando os alunos no processo de desenvolvimento de uma 
+                    visão crítica da ferramenta, assim como no desenvolvimento e esclarecimento de boas práticas e limites éticos da IA.
+
+                    <br><br>
+
+                    O MIA conta com seções que abordam os seguintes conteúdos:
+
+                    <br><br>
+
+                    ✔️ Esclarecimento sobre o conceito de IA, como ela funciona e demais informações consideradas importantes para os seus usuários e 
+                    pesquisadores da então tecnologia;<br>
+                    ✔️ Boas práticas considerando a escolha da ferramenta, o uso da ferramenta e a utilização do resultado apresentado pela IA;<br>
+                    ✔️ Ferramenta de indicação de plataformas de IA categorizadas de acordo com as suas funções e um breve resumo sobre as funcionalidades 
+                    de cada uma delas;<br>
+                    ✔️ Indicações bibliográficas tanto para os usuários como também para os pesquisadores da ferramenta.
+
+                    <br><br>
+
+                    Dessa forma, esperamos que a ferramenta seja de grande ajuda para graduandos e pós-graduandos e venha a contribuir de forma positiva 
+                    em inúmeras pesquisas científicas.
+
+                    <br>
+
+                </p>
 
             </div>
 
-            <div id="listaResultados"></div>
+        </section>
 
-            <div id="semResultados">
+        <!------------------------------------------------------------ Terceira seção ------------------------------------------------------------>
 
-                <div class="icone-vazio">⌕</div>
-                <h3>Nenhuma ferramenta encontrada</h3>
-                <p>Tente pesquisar utilizando outras palavras-chave.</p>
+        <section class="padding-definicao-categorias">
+
+            <!-- Título da terceira seção -->
+
+            <div class="cabecalho-resultados">
+
+                <div>
+
+                    <span>Categorias</span>
+
+                    <h2>Em quais categorias as ferramentas de IA foram organizadas?</h2>
+
+                </div>
+
+            </div>
+
+            <!-- Categorias e breve descrições delas -->
+
+            <div id="listaResultados">
+
+                <article class="card">
+
+                    <div class="card-topo">
+                        <div class="icone">🧠</div>
+                        <span class="tipo">Aprendizado</span>
+                    </div>
+
+                    <h3>Aprendizado de máquina</h3>
+
+                    <p>
+                        Sistemas podem identificar padrões em grandes conjuntos
+                        de dados e utilizar essas informações para realizar
+                        classificações, previsões ou gerar respostas.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-topo">
+                        <div class="icone">💬</div>
+                        <span class="tipo">Linguagem</span>
+                    </div>
+
+                    <h3>IA generativa</h3>
+
+                    <p>
+                        Tecnologias generativas conseguem produzir novos conteúdos,
+                        como textos, imagens, músicas, vídeos e códigos, a partir
+                        de comandos ou instruções fornecidas pelo usuário.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-topo">
+                        <div class="icone">🔎</div>
+                        <span class="tipo">Análise</span>
+                    </div>
+
+                    <h3>Reconhecimento de padrões</h3>
+
+                    <p>
+                        A IA pode analisar grandes quantidades de informações e
+                        identificar relações ou padrões que podem auxiliar pessoas
+                        em diferentes atividades.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-topo">
+                        <div class="icone">🔎</div>
+                        <span class="tipo">Análise</span>
+                    </div>
+
+                    <h3>Reconhecimento de padrões</h3>
+
+                    <p>
+                        A IA pode analisar grandes quantidades de informações e
+                        identificar relações ou padrões que podem auxiliar pessoas
+                        em diferentes atividades.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-topo">
+                        <div class="icone">🔎</div>
+                        <span class="tipo">Análise</span>
+                    </div>
+
+                    <h3>Reconhecimento de padrões</h3>
+
+                    <p>
+                        A IA pode analisar grandes quantidades de informações e
+                        identificar relações ou padrões que podem auxiliar pessoas
+                        em diferentes atividades.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-topo">
+                        <div class="icone">🔎</div>
+                        <span class="tipo">Análise</span>
+                    </div>
+
+                    <h3>Reconhecimento de padrões</h3>
+
+                    <p>
+                        A IA pode analisar grandes quantidades de informações e
+                        identificar relações ou padrões que podem auxiliar pessoas
+                        em diferentes atividades.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!------------------------------------------------------------ Quarta seção ------------------------------------------------------------>
+
+
+        <section class="categorias">
+
+            <!-- Título da quarta seção -->
+
+            <div class="cabecalho-resultados">
+
+                <div>
+
+                    <span>Equipe desenvolvedora</span>
+
+                    <h2>Conheça a equipe desenvolvedora do manual</h2>
+
+                </div>
+
+            </div>
+
+            <!-- Texto da quarta seção -->
+
+            <div class="card" style="margin-top: 35px;">
+
+                <p>
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+
+                    <br><br>
+
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                    CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   CRIAR TEXTO   
+                </p>
 
             </div>
 
@@ -174,14 +323,16 @@
 
     </main>
 
-    <!-- =====================================================
-                              Rodapé
-    ====================================================== -->
+    <!-- =====================================================================================================================================
+    Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé     Rodapé
+    ====================================================================================================================================== -->
 
     <footer>
 
-        <h2>Manual IArandu</h2>
-        <p>Conhecimento para a era da Inteligência Artificial.</p>
+        <img src="imagens/logo.png" alt="Logo do Manual IArandu.">
+
+        <h2>MIA</h2>
+
         <small>© 2026 Manual IArandu</small>
 
     </footer>
