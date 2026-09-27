@@ -12,26 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <script defer>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const menuToggle = document.getElementById("menuToggle");
-            const menu = document.getElementById("menu");
-        
-            // Verifica se os elementos existem na página
-            if (menuToggle && menu) {
-    
-                menuToggle.addEventListener("click", function () {
-        
-                    menu.classList.toggle("active");
-        
-                });
-        
-            }
-        
-        });
-    </script>
-    <script src="script.js" defer></script>
+    <script src="js/plataformas.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
 
 <body>
@@ -51,7 +33,7 @@
                 <div class="logo-text">
 
                     <h2>MIA</h2>
-                    
+
                     <span>Manual IArandu</span>
 
                 </div>
@@ -68,8 +50,7 @@
             <a href="o-que-e-uma-ia.html">O que é uma IA?</a>
             <a href="boas-praticas.html">Boas Práticas</a>
             <a href="plataformas.html">Plataformas</a>
-            <a href="indicacoes_bibliograficas.html">Indicações Bibliográficas</a>
-            
+
         </nav>
 
     </header>
@@ -77,7 +58,6 @@
     <!-- =====================================================================================================================================
     Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página      Conteúdo da página          
     ====================================================================================================================================== -->
-
 
     <main>
 
@@ -92,7 +72,7 @@
                 <p>Pesquise o que você deseja fazer e descubra quais ferramentas de Inteligência Artificial podem
                     ajudar.</p>
                 
-                <!-- Busca - EM CONSTRUÇÃO -->
+                <!-- Busca -->
 
                 <div class="search-box">
 
@@ -121,58 +101,113 @@
 
             <div class="categorias-grid">
 
-                <button class="categoria" data-categoria="Texto">
+                <button class="categoria" data-categoria="mapeamento">
 
-                    <span class="emoji">📝</span>
-                    <strong>Texto</strong>
-                    <small>Escrita e conteúdo</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Imagem">
-
-                    <span class="emoji">🎨</span>
-                    <strong>Imagem</strong>
-                    <small>Criação visual</small>
+                    <span class="emoji">🗺️</span>
+                    <strong>Mapeamento da literatura</strong>
+                    <small>Conexões e descoberta de pesquisas</small>
 
                 </button>
 
-                <button class="categoria" data-categoria="Vídeo">
+                <button class="categoria" data-categoria="busca">
 
-                    <span class="emoji">🎬</span>
-                    <strong>Vídeo</strong>
-                    <small>Criação e edição</small>
-
-                </button>
-
-                <button class="categoria" data-categoria="Áudio">
-
-                    <span class="emoji">🎵</span>
-                    <strong>Áudio</strong>
-                    <small>Voz e música</small>
+                    <span class="emoji">🔎</span>
+                    <strong>Busca e descoberta científica</strong>
+                    <small>Artigos e literatura acadêmica</small>
 
                 </button>
 
-                <button class="categoria" data-categoria="Educação">
+                <button class="categoria" data-categoria="base">
 
                     <span class="emoji">📚</span>
-                    <strong>Educação</strong>
-                    <small>Ensino e aprendizagem</small>
+                    <strong>Bases bibliográficas</strong>
+                    <small>Índices e literatura científica</small>
 
                 </button>
 
-                <button class="categoria" data-categoria="Programação">
+                <button class="categoria" data-categoria="biomedica">
 
-                    <span class="emoji">💻</span>
-                    <strong>Programação</strong>
-                    <small>Código e desenvolvimento</small>
+                    <span class="emoji">🧬</span>
+                    <strong>Bases biomédicas</strong>
+                    <small>Medicina e ciências da saúde</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="educacao">
+
+                    <span class="emoji">🎓</span>
+                    <strong>Bases de educação</strong>
+                    <small>Pesquisa e literatura educacional</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="multidisciplinar">
+
+                    <span class="emoji">🌐</span>
+                    <strong>Bases multidisciplinares</strong>
+                    <small>Diversas áreas do conhecimento</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="editora">
+
+                    <span class="emoji">📖</span>
+                    <strong>Plataformas de editoras científicas</strong>
+                    <small>Periódicos e livros acadêmicos</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="regional">
+
+                    <span class="emoji">🌎</span>
+                    <strong>Bases e portais regionais</strong>
+                    <small>Produção científica latino-americana</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="institucional">
+
+                    <span class="emoji">🏛️</span>
+                    <strong>Repositórios e portais institucionais</strong>
+                    <small>Produção acadêmica e científica</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="preprint">
+
+                    <span class="emoji">📄</span>
+                    <strong>Servidores de preprints</strong>
+                    <small>Pesquisas antes da publicação formal</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="citacoes">
+
+                    <span class="emoji">🔗</span>
+                    <strong>Análise de citações</strong>
+                    <small>Relações e impacto da literatura</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="revisao">
+
+                    <span class="emoji">🔬</span>
+                    <strong>Revisão e síntese da literatura</strong>
+                    <small>Análise e organização de evidências</small>
+
+                </button>
+
+                <button class="categoria" data-categoria="leitura">
+
+                    <span class="emoji">📑</span>
+                    <strong>Leitura e análise de artigos</strong>
+                    <small>Compreensão e análise de documentos</small>
 
                 </button>
 
             </div>
 
         </section>
-
 
         <!-- Seleção de acordo com a categorização  -->
 
@@ -211,12 +246,18 @@
 
     <footer>
 
-        <h2>Manual IArandu</h2>
-        <p>Conhecimento para a era da Inteligência Artificial.</p>
+        <img src="imagens/logo.png" alt="Logo do Manual IArandu.">
+
+        <h2>MIA</h2>
+
+        <small>Plataforma desenvolvida por Iago Soares - <a href="https://wa.me/5551986822027" target="_blank">📞 Contato </a>  </small> 
+        <br>
         <small>© 2026 Manual IArandu</small>
 
     </footer>
 
 </body>
+
+</html>
 
 </html>
